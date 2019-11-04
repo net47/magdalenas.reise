@@ -1,0 +1,41 @@
+---
+layout: default
+title: "Magdalenas Reise"
+custom_page_title: "Magdalenas Reise"
+custom_page_description: "Willkommen auf meinem Blog über mein Aupair-Abenteuer in Amerika."
+custom_featured_image: "assets/images/cover.jpg"
+---
+
+<!-- Home Page -->
+
+   <!-- Start Main Content Area -->
+    <div class="main-content-area themeix-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="main-content">
+                       {% include post_loop.html %}  
+					   
+					   {% include pagination.html %}
+
+                    </div>
+                 </div>
+                  <div class="col-md-4"> 
+                  <!-- Start  Sidebar -->
+                    {% include sidebar.html %}
+                  <!-- End Sidebar -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Content Area -->
+    
+    <!-- Instafeed -->
+    {% include instafeed.html %}
+
+ 
+
+
+
+
+

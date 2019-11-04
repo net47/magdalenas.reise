@@ -1,0 +1,78 @@
+<!-- Start Sidebar -->
+    <div class="sidebar-wrapper">
+        <aside>
+            <!-- Author Info -->
+            <div class="single-widget">
+                <h4 class="sidebar-title">Über mich</h4>
+                <div class="profile-picture">
+                        <figure><img src="{{site.url}}/assets/images/authors/magdalena_sidebar.png" alt="{{site.title}}"></figure>
+                </div>
+                <p class="author-name">{{site.author_name}}</p>
+                <!-- <span class="profession">Passionate Blogger</span>-->
+                <div class="widget-text bio-text">
+                    <p>{{site.author_bio}}</p>
+                </div>
+<!--                 <div class="social-share">
+                    <ul>
+                        <li><a target="_blank" href="{{site.author_facebook}}"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank"  href="{{site:author_twitter}}"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="mailto:{{site.author_email}}"><i class="fa fa-envelope"></i></a></li>
+                        <li><a target="_blank" href="{{site:author_url}}"><i class="fa fa-link"></i></a></li>
+                    </ul>
+                </div> -->
+                <!-- <div class="post-buttons">
+                <a href="{{ site.baseurl }}ueber-mich" class="sidebar">mehr über mich</a>   
+                </div> -->
+            </div>
+            <!-- Email Subscribe -->
+            <!-- <div class="single-widget subscribe-widget">
+                <h4 class="sidebar-title">Subscribe Now</h4>
+
+                <div id="mc_embed_signup">
+                    <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-form" novalidate>
+                        <div class="form-groupinput-group">
+                            <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="Enter your email..." required>
+                        </div>
+                        <div class="form-group input-group">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary subscribe-btn">
+                        </div>
+                    </form>
+                    <div id="message"></div>
+                </div>
+            </div> -->
+            <!-- Recent Posts -->
+<!--             <div class="single-wiget">
+                <h4 class="sidebar-title">recent posts</h4>
+                <div class="recent-posts">
+                  {% for post in site.posts limit:5 %}
+                    <div class="single-recent-post">
+                        <div class="recent-post-img">
+                            <a href="{{baseurl}}{{post.url}}"><img src="{{site.baseurl}}{{ post.post_image }}" alt="{{ post.title }}"></a>
+                        </div>
+                        <div class="recent-post-title">
+                            <a href="#">{{post.title}}</a>
+                            <div class="post-date">{{ post.date | date_to_string }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div> -->
+            <!-- Twittwr Feed -->
+<!--             <div class="single-widget">
+                <h4 class="sidebar-title">Recent Tweets</h4>
+                <div class="twitter-widget">
+                     <a href="https://twitter.com/themeix_ltd" class="twitter-timeline" data-chrome="nofooter noborders noheader" data-tweet-limit="3">Recent Tweets</a>
+                </div>
+            </div> -->
+
+            <div class="single-widget">
+                <h4 class="sidebar-title">Fotos</h4>
+                <ul>
+                    <li><a href="https://photos.app.goo.gl/5LW3VA9x5DR8ufET9" target="_blank">September 2019</a></li>
+                </ul>
+            </div>
+
+
+        </aside>
+    </div>
+ <!-- End Sidebar -->

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+
+   <!-- Start Main Content Area -->
+    <div class="main-content-area themeix-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="main-content">
+                       {{content}}		  
+					   
+ 					 	{% if page.comments %}
+							{% include disqus_comments.html %}
+						{% endif %}   
+                    </div>
+                 </div>
+                  <div class="col-md-4"> 
+                  <!-- Start  Sidebar -->
+                    {% include sidebar.html %}
+                  <!-- End Sidebar -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Content Area -->
+    
+    <!-- Instafeed -->
+    {% include instafeed.html %}

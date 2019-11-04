@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+   <!-- Start Main Content Area -->
+    <div class="main-content-area themeix-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-content">
+                       {{content}}		  
+					   
+					 	{% if page.comments %}
+							{% include disqus_comments.html %}
+						{% endif %}
+
+                        <div class="post-button-startpage">
+                        <a href="{{site.url}}" class="read-more-btn">zurück zur Startseite</a>
+                        </div>  
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Content Area -->
+    
+

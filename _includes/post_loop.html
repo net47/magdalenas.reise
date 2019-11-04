@@ -1,0 +1,53 @@
+{% for post in paginator.posts %}
+
+<article class="single-post">
+    <div class="author-thumbnail">
+        <img src="{{site.baseurl}}{{ post.author_image }}" alt="{{ post.title }}">
+    </div>
+    <div class="single-article">
+        <div class="post-image">
+            <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}{{ post.post_image }}" alt="{{ post.title }}"></a>
+            <div class="tag-link">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="tag-link">
+                <!-- Whitespace added for readability -->
+                    {% assign m = post.date | date: "%-m" %}
+                    {{ post.date | date: "%-d." }}
+                    {% case m %}
+                      {% when '1' %}Januar
+                      {% when '2' %}Februar
+                      {% when '3' %}M&auml;rz
+                      {% when '4' %}April
+                      {% when '5' %}Mai
+                      {% when '6' %}Juni
+                      {% when '7' %}Juli
+                      {% when '8' %}August
+                      {% when '9' %}September
+                      {% when '10' %}Oktober
+                      {% when '11' %}November
+                      {% when '12' %}Dezember
+                    {% endcase %}
+                    {{ post.date | date: "%Y" }}
+                </a>
+            </div>
+        </div>
+        <h2 class="themeix-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="post-text">
+            <p>{{ post.excerpt }}</p>
+        </div>
+        <div class="post-buttons">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more-btn">Weiterlesen</a>
+            <!-- <div class="social-share">
+                <span>Teilen auf </span>
+              
+      				<ul>
+                <li><a href="http://twitter.com/share?text={{ page.title }}&url={{ page.url | replace:'index.html','' | prepend: site.url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" ><i class="fa fa-facebook"></i></a></li>
+              </ul>
+				
+	               
+            </div> -->
+        </div>
+    </div>
+</article>
+
+{% endfor %}

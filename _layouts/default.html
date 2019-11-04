@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>	
+    <meta name="description" content="{{ site.description }}">	
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+    <link rel="prefetch" href="{{ site.url }}">	
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- Icons -->
+    <link rel="shortcut icon" href="{{ "/favicon.png" | prepend: site.baseurl }}" />
+    <link rel="shortcut icon" sizes="196x196" href="{{ "/assets/images/android-icon.png" | prepend: site.baseurl }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/images/32x32.png" | prepend: site.baseurl }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/images/16x16.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" href="{{ "/assets/images/apple-touch-icon.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ "/assets/images/apple-touch-icon-57x57.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/images/apple-touch-icon-72x72.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ "/assets/images/apple-touch-icon-76x76.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/images/apple-touch-icon-114x114.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ "/assets/images/apple-touch-icon-120x120.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ "/assets/images/apple-touch-icon-144x144.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/images/apple-touch-icon-152x152.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/images/apple-touch-icon-180x180.png" | prepend: site.baseurl }}" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/owl.carousel.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/responsive.css">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Header -->
+  {% include header.html %}
+   <!-- Start Slider --> 
+    <div class="container-fluid" style="{% if page.custom_featured_image != null %} background:rgba(0, 0, 0, 0) url({{site.baseurl}}/{{page.custom_featured_image}}) no-repeat scroll center center / cover;background-position: center center; {% else %} background:rgba(0, 0, 0, 0) url({{site.baseurl}}/assets/images/cover.jpg) no-repeat scroll center center / cover;background-position: center center {% endif %} ">
+        <div class="row">
+            <div class="slider-area">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="slider-text">
+                        <h1>{% if page.custom_page_title %}{{page.custom_page_title}} {% else %} {{page.title}} {% endif %}</h1>
+                        <p>{% if page.custom_page_description %}{{page.custom_page_description}}{% else %} {{site.description}} {% endif %} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider -->
+
+	{{ content }}
+	
+    {% include footer.html %}
+
+     <!-- jquery -->
+    <script src="{{site.baseurl}}/assets/js/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
+
+    <!-- For Tweeter Feed -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-- Instagram Image -->
+    <script src="{{site.baseurl}}/assets/js/instafeed.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="{{site.baseurl}}/assets/js/owl.carousel.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="{{site.baseurl}}/assets/js/jquery.easing.js"></script>
+
+    <!-- Main JS -->
+    <script src="{{site.baseurl}}/assets/js/main.js"></script>
+    <script type="text/javascript">
+      var config = {
+        'disqus_shortname': '{{ site.theme_disqus_shortname }}',
+        'analytics_id': '{{ site.theme_analytics_id }}',
+        'analytics_domain': '{{ site.theme_analytics_domain }}',		
+ 
+      };
+ 
+    </script>
+	
+	
+</body>
+
+</html>

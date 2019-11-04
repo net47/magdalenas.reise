@@ -1,0 +1,19 @@
+<!-- Pagination -->
+<div class="pagination-wrapper">
+   {% if paginator.previous_page %}
+    <div class="newer_post half-column">
+        <a class="themeix-btn-o" href="{{ paginator.previous_page_path }}"> Neuere Beiträge </a>
+    </div>
+    {% endif %}
+    <div class="page_number half-column">
+        <span> Seite {{paginator.page}} von {{paginator.total_pages}} </span>
+    </div>
+    {% if paginator.next_page %}
+    <div class="older_post half-column">
+        <a class="themeix-btn-o" href="{{ paginator.next_page_path }}"> Ältere Beiträge</a>
+    </div>
+    {% endif %}
+</div>
+<!-- Pagination -->
+
+ 
