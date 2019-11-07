@@ -15,7 +15,7 @@ paginate_path:              "/page/:num/"
 
 # Author Settings
 author_name: 				""
-author_bio: 				"Hallo, mein Name ist Magdalena! Ich wohne in Steilacoom (Nähe Seatle, WA) und verbringe dort meine Zeit als Aupair."
+author_bio: 				"Hallo, mein Name ist Magdalena! Ich wohne in Steilacoom (Nähe Seattle, WA) und verbringe dort meine Zeit als Aupair."
 author_url: 				"https://magdalenas.reise"
 author_facebook: 			""
 author_twitter: 			""
