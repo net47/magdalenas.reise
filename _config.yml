@@ -42,3 +42,7 @@ highlighter:                rouge
 
 # exclude files or folders
 exclude: [excluded/]
+
+# add specifc GEM's
+gems:
+  - jemoji
