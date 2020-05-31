@@ -1,41 +1,43 @@
----
-layout: default
-title: "Magdalenas Reise"
-custom_page_title: "Magdalenas Reise"
-custom_page_description: "Willkommen auf meinem Blog über mein Aupair-Abenteuer in Amerika."
-custom_featured_image: "assets/images/cover.jpg"
----
-
-<!-- Home Page -->
-
-   <!-- Start Main Content Area -->
-    <div class="main-content-area themeix-ptb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="main-content">
-                       {% include post_loop.html %}  
-					   
-					   {% include pagination.html %}
-
-                    </div>
-                 </div>
-                  <div class="col-md-4"> 
-                  <!-- Start  Sidebar -->
-                    {% include sidebar.html %}
-                  <!-- End Sidebar -->
-                </div>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>dev47.net</title>
+    <style>
+    * { 
+      box-sizing: padding-box;
+    }
+    html {
+      height: 100%;
+    }
+    body {
+      font-family: "Courier New", "Courier", monospace;
+      font-size: 12px;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 100%;
+      position: relative;
+    }
+    .content {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">dev47.net</div>
+      <script>
+        window.location.href = 'http://magdalena.tremmel.xyz';
+      </script>
     </div>
-    <!-- End Main Content Area -->
-    
-    <!-- Instafeed -->
-    {% include instafeed.html %}
-
- 
-
-
-
-
-
+  </body>
+</html>
